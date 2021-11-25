@@ -1,13 +1,10 @@
-//fetch("https://jsonplaceholder.typicode.com/posteds")
 /*Random Ron no duplicates*/
-
 const blockquotes = document.querySelector(".qoute");
 const button = document.querySelector("#get-quote");
 console.log(blockquotes);
 console.log(button);
 
 const allQuotes = [];
-console.log(allQuotes);
 
 const getQuote=()=>{
   fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes")
@@ -26,6 +23,7 @@ const getQuote=()=>{
       getQuote();
     }
     else{
+      console.log(allQuotes);
       allQuotes.push(data[0]);
       blockquotes.textContent=data;
     }
