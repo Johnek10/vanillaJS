@@ -59,27 +59,45 @@ const monsters = [
   { name: "sock", alt: "Picture with sock", src: "img/sock.svg" },
 ];
 
+const uncoverMonster = [];
+const initialButton = [];
+
 function clickHandler(e) {
-    const button=event.target.closest('button');
-    console.log(button)
+    const button=e.target.closest('button');
+    //console.log(button.getAttribute('data-index'));
+    initialButton.push(button);
     if(!button)
     return;
-
     //console.log(button.getAttribute('data-index'));
-    
     const monsterData=monsters[button.getAttribute('data-index')]
     const img=document.createElement('img');
 
     //console.log(monsterData);
     img.src=monsterData.src;
     img.alt=monsterData.alt;
+    uncoverMonster.push(img);
 
     button.replaceWith(img);
 
-}
+    setTimeout(() => {
+      if (img.alt == "Picture with sock") {
+        let counter = 0;
+        uncoverMonster.forEach((element) => {
+          element.replaceWith(initialButton[counter]);
+          counter++;
+        });
+        alert(`You lost, your result ${result}, play again`);
+        result=0;
+      } else {
+        result++;
+        console.log(result);
+      }
+    }, 500);
+  }
+
 
 app.innerHTML = monsters
-  .map(({ name, alt, src }, index) => {
+  .map((e,index) => {
     return `
         <div class="box">
         <button class="button" data-index=${index}>
