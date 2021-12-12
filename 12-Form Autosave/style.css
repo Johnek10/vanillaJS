@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    grid-template-rows: 70px 250px 1fr;
+  }
+  .navigation{
+    text-align: center;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    width: 35vw;
+  }
+  
+  .button__one{
+    margin-top: 20px;
+  }
+  
+  .button__two{
+    
+    height: 30px;
+  }
