@@ -1,19 +1,44 @@
 body {
+    background-color: #2a9d8f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    max-width: 40em;
-    width: 88%;
-}
-
-label {
+  }
+  
+  form {
+    background-color: #e76f51;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+  }
+  input {
+    margin: 15px 0;
+    border-radius: 8px;
+    border-style: none;
+  }
+  label {
     display: block;
     width: 100%;
-}
-
-input {
-    margin-bottom: 1em;
-}
-
-[type="checkbox"] {
+    font-weight: 500;
+  }
+  
+  [type="checkbox"] {
     margin-bottom: 0;
     margin-right: 0.25em;
-}
+  }
+  
+  button {
+    background-color: #e9c46a;
+    border-radius: 7px;
+    border-style: none;
+    height: 2rem;
+    margin: 15px 0;
+    width: 40%;
+  }
+  
