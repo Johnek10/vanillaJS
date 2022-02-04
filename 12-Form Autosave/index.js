@@ -12,7 +12,7 @@ const nameValue = nameInput.value;
 const emailValue = emailInput.value;
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+   // e.preventDefault();
     const nameValue = nameInput.value;
     const emailValue = emailInput.value;
   
@@ -26,7 +26,5 @@ buttonTwo.addEventListener('click',() => {
     console.log(localStorage.getItem('email'));
     printData.innerHTML=`<p>${localStorage.getItem('name')}</p>
     <p>${localStorage.getItem('email')}</p>`;
-
     main.appendChild(printData);
-   
 })
