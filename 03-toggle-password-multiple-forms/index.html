@@ -4,12 +4,11 @@
     <meta charset="utf-8" />
     <title>Password Visibility - Multiple Forms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <h1>Password Visibility - Multiple Forms</h1>
-    <h2>Change Username</h2>
-    <p>Enter your username and password to change your username.</p>
+    <h2 class="heading">Change Username</h2>
 
     <form>
       <div>
@@ -22,7 +21,12 @@
       </div>
       <div>
         <label for="show-password">
-          <input type="checkbox" name="show-password" id="show-password" data-pass="#password"/>
+          <input
+            type="checkbox"
+            name="show-password"
+            id="show-password"
+            data-pass="#password"
+          />
           Show password
         </label>
       </div>
@@ -31,9 +35,7 @@
       </p>
     </form>
 
-    <h2>Change Password</h2>
-
-    <p>Enter your current password and new password below.</p>
+    <h2 class="heading">Change Password</h2>
 
     <form>
       <div>
@@ -48,7 +50,12 @@
 
       <div>
         <label for="show-passwords">
-          <input type="checkbox" name="show-passwords" id="show-passwords" data-pass="#current-password, #new-password"/>
+          <input
+            type="checkbox"
+            name="show-passwords"
+            id="show-passwords"
+            data-pass="#current-password, #new-password"
+          />
           Show passwords
         </label>
       </div>
