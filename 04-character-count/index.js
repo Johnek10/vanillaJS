@@ -7,7 +7,7 @@ text.addEventListener('input',()=>{
     let afterSplit=text.value.split(/[\s]+/g); 
 
     let words=afterSplit.filter(e=>{
-        return (e.length>0 )
+        return (e.length>0)
     })
     console.log(words);
     wordCount.innerText=words.length;
