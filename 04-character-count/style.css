@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: #FCA311;
+}
+label{
+    margin: 2rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+textarea{
+    font-size: 0.9rem;
+    width: 50%;
+    min-height: 170px;
+    border-radius: 10px;
+    border: #14213D solid 5px;
+}
+
+textarea:focus{
+    background: #E5E5E5;
+    outline: none;
+}
+
+
+p{
+    font-size: 2.2rem;
+}
