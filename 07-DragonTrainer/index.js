@@ -5,9 +5,9 @@ const displayArticle = ({ articles }) => {
     .map(({ title, author, article }) => {
       return `<h3>${title}</h3>
     <p>${article}</p>
-    <p>${author}</p> `;
+    <p class="author">${author}</p> `;
     })
-    .join("")} 
+    .join('')} 
   </article>`;
 };
 
